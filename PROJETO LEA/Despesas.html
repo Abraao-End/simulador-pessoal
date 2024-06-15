@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Despesas</title>
     <link rel="stylesheet" href="Despesas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Importando uma biblioteca de icones-->
 </head>
 <body>
     <header>
@@ -13,21 +15,79 @@
                 <img class="profile-image" src="Img/3106921.png" alt="perfil">
             </div>
             <nav>
-                <div>
                 <a class="links" href="inicio.html">Início</a>
-                <a target="_blank" class="links" href="Despesas.html">Despesas</a>
+                <a class="links" href="Despesas.html">Despesas</a>
                 <a class="links" href="contas.html">Contas</a>
                 <a class="links" href="configuração.html">Configurações</a>
-                </div>
             </nav>
-            </div>
-            <h2 class="profile-name">johne</h2>
+        </div>
+        
+        <h1 class="profile-name">Johne</h1>
     </header>
     <main>
         <section>
-            <fieldset id="texto">
+            <fieldset id="cartao">
+                <div id="coluna1"> <!-- O Projeto é dividido em colunas (essa é a primeira)-->
 
+                    <div class="linha1"><!-- Define a linha 1 da primeira coluna-->
+                        <div class="cartao" id="gastos"><!-- Cartões de pagar e receber -->
+                            <h2>Gastos fixos</h2><hr>
+                            <div class="linhaGastos">
+                                <p>Moradia</p>
+                                <p>R$ 3.650,00</p>
+                                <i class="bi bi-caret-down"></i><!--Icone da biblioteca-->
+                            </div>
+                            <hr>
+                            <div class="linhaGastos">
+                                <p>Mercado</p>
+                                <p>...</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                            <hr>
+                            <div class="linhaGastos">
+                                <p>Plano de Saúde</p>
+                                <p>R$ 600,00</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
 
+                    <div class="linha2"> <!-- Tabela dos dados de Pagar e receber serão grandes linhas da coluna 1 -->
+                        <div class="cartao" id="Pagar">
+                            <h2>Gastos futuros</h2><hr>
+                            <div class="linhaGastos">
+                                <p>Faculdade</p>
+                                <p>A definir</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                            <hr>
+                            <div class="linhaGastos">
+                                <p>Cartão</p>
+                                <p>A definir</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                            <hr>
+                            <div class="linhaGastos">
+                                <p>CNH</p>
+                                <p>A definir</p>
+                                <i class="bi bi-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coluna2">
+                    <div class="dicas">
+                        <h2>Dicas de economia</h2>
+                    </div>
+                    <div class="cartaoDicas">
+                        <ul>
+                            <li>• Não gaste compulsivamente</li>
+                            <li>• Anote seus gastos durante o mês para mapear para onde o seu dinheiro está indo</li>
+                            <li>• Use a estratégia 50/30/20</li>
+                        </ul>
+                    </div>
+                </div>
             </fieldset>
         </section>
     </main>

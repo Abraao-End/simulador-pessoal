@@ -13,26 +13,73 @@
                 <img class="profile-image" src="Img/3106921.png" alt="perfil">
             </div>
             <nav>
-                <div>
                 <a class="links" href="inicio.html">Início</a>
-                <a target="_blank" class="links" href="Despesas.html">Despesas</a>
+                <a class="links" href="Despesas.html">Despesas</a>
                 <a class="links" href="contas.html">Contas</a>
                 <a class="links" href="configuração.html">Configurações</a>
-                </div>
             </nav>
-            </div>
-            <h2 class="profile-name">johne</h2>
+        </div>
+        
+        <h1 class="profile-name">johne</h1>
     </header>
     <main>
         <section>
-            <fieldset id="texto">
-                <div id="receber">
-                    <span class="receive">A Receber</span>
-                    <span class="value">R$ 5000,00</span>
-                   <div class="bola-verde"></div>
-                </div>
-                <div id="Pagar">
+            <fieldset id="cartao">
+                <div id="coluna1"> <!-- O Projeto é dividido em colunas (essa é a primeira)-->
 
+                    <div class="linha1"><!-- Define a linha 1 da primeira coluna-->
+                        <div class="cartao" id="receber"><!-- Cartões de pagar e receber -->
+                            <span class="texto">A Receber</span>
+                            <span class="valor">R$ 5000,00</span>
+                            <div class="bola" id="bola-verde"></div>
+                        </div>
+                        <div class="cartao" id="Pagar">
+                            <span class="texto">A Pagar</span>
+                            <span class="valor">R$ 2400,00</span>
+                            <div class="bola" id="bola-vermelha"></div>
+                        </div>
+                    </div>
+
+                    <div class="linha2"> <!-- Tabela dos dados de Pagar e receber serão grandes linhas da coluna 1 -->
+                        <h2>A pagar</h2>
+                        <hr>
+                        <div class="cartaoPagar">
+                            <div class="linhaTabela">
+                                <p>Gastos fixos</p>
+                                <p class="valor">R$ 5500,00</p>
+                            </div>
+                            <hr>
+                            <div class="linhaTabela">
+                                <p>12/06 Pres</p>
+                                <p class="valor">R$...,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="linha3">
+                        <h2>A receber</h2>
+                        <hr>
+                        <div class="cartaoReceber">
+                            <div class="linhaTabela">
+                                <p>04/06 Aluguel da loja</p>
+                                <p class="valor">R$ 500,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coluna2">
+                    <div class="cartaoColuna" id="receitas">
+                        <h2>Receitas</h2><hr>
+                        <p>R$5.550,00</p>
+                    </div>
+                    <div class="cartaoColuna" id="despesas">
+                        <h2>Despesas</h2><hr>
+                        <p>R$2803,00</p>
+                    </div>
+                    <div class="cartaoColuna" id="lucro-prejuizo">
+                        <h2>Lucro/Prejuízo</h2><hr>
+                        <p>R$2747,00</p>
+                    </div>
                 </div>
             </fieldset>
         </section>
